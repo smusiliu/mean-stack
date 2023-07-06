@@ -1,0 +1,14 @@
+Single Threading in Node.js
+
+Before diving into what single threading means, imagine you have a big box of toys, and you want to play with all of them at the same time. But you only have one pair of hands. That means you can only play with one toy at a time, right? That's similar to what single-threading means.
+
+In Node, there's a special place where your computer runs all the programs called the "runtime." And inside this runtime, Node uses a single thread to do things. A thread is like a little worker that can do one task at a time.
+
+So when you ask Node to do something, like running a program or processing some data, it uses this single thread to work on it. It starts working on the first task you give it, then moves on to the next one, and so on. It's like playing with one toy after another.
+
+Now, this can be a little slow sometimes, especially if you have a lot of tasks or if some tasks take a long time to finish. Imagine you have a lot of toys and it takes a long time to play with each one. You might get bored waiting for your turn!
+
+But single-threading has its advantages too. It keeps things simple because you don't have to worry about multiple tasks happening at the same time and getting mixed up. It's like playing with one toy and focusing on it completely.
+
+So, single-threading in Node means that it uses one worker thread to handle tasks, just like you playing with toys one by one. It can be a bit slow when there are many things to do, but it keeps things simple and easy to manage.
+
